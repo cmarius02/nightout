@@ -6,7 +6,7 @@ var app = express();
 
 exports.index = function(req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  var contents = fs.readFileSync("./public/index.html", "UTF-8");
+  var contents = fs.readFileSync("./public/template/samples/sample-04/index.html", "UTF-8");
   res.end(contents);
 };
 
